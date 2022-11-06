@@ -6,12 +6,12 @@ import React from 'react';
 const Carousel = ({ props }) => {
   const { images, id } = props;
   return (
-    <div id={`card-${id}`} className="carousel slide relative max-w-[640px]" data-bs-ride="carousel">
-      <div className="carousel-inner relative w-full overflow-hidden">
+    <div id={`card-${id}`} className="carousel slide relative max-w-[600px] p-5" data-bs-ride="carousel">
+      <div className="carousel-inner relative w-full overflow-hidden max-h-[215px] rounded-lg">
 
         {
           images.map((imageURL, index) => (
-            <div key={index} id={index} className={index === 0 ? 'carousel-item relative active float-left w-full' : 'carousel-item relative float-left w-full '}>
+            <div key={index} id={index} className={index === 0 ? 'carousel-item relative active float-left w-full' : 'carousel-item relative float-left w-full'}>
               <img className="block w-full" src={imageURL} alt="ok" />
             </div>
           ))
