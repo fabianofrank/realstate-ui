@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(getProperties());
-  }, []);
+  }, [dispatch]);
 
   const formatter = new Intl.DateTimeFormat('en-GB', {
     year: 'numeric',
@@ -30,7 +30,7 @@ const Home = () => {
       {
         properties.map((property) => (
           <div key={property.id}>
-            <Carousel props={property.images} />
+            <Carousel props={property} />
             <Link to={`details/${property.id}`}>
               <p>{property.city}</p>
               <p>{property.address}</p>
@@ -52,7 +52,6 @@ const Home = () => {
                 <p>{formatter.format(Date.parse(property.created_at))}</p>
               </div>
             </Link>
-
           </div>
         ))
       }
