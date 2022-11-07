@@ -28,6 +28,14 @@ export const getProperty = createAsyncThunk(
   },
 );
 
+export const deleteProperty = createAsyncThunk(
+  'properties/deleteProperty',
+  async (id) => {
+    const response = await axios.delete(`${URL}/${id}`);
+    return response.data;
+  },
+);
+
 export const propertySlice = createSlice({
   name: 'property',
   initialState: { properties: [], status: null },
@@ -50,6 +58,16 @@ export const propertySlice = createSlice({
     });
     builder.addCase(addProperty.fulfilled, (state, action) => {
       state.status = action.payload;
+    });
+    builder.addCase(deleteProperty.pending, (state) => {
+      state.status = 'Loading';
+    });
+    builder.addCase(deleteProperty.rejected, (state) => {
+      state.status = 'error: "Failed to delete property"';
+    });
+    builder.addCase(deleteProperty.fulfilled, (state, action) => {
+      state.status = action.payload;
+      state.properties = state.properties.filter((property) => property.id !== action.meta.arg);
     });
   },
 });

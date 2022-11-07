@@ -73,10 +73,8 @@ const Home = () => {
                   <div className="bg-gray-300 p-2 rounded-full flex space-x-1 items-center shadow-sm">
                     <p className="font-medium text-sm">
                       Available
-
                     </p>
                     <p className="font-light text-sm">
-
                       {formatter.format(Date.parse(property.created_at))}
                     </p>
                   </div>
