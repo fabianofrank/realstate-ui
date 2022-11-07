@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Real State User Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Important:
 
-## Available Scripts
+First you will need to run this API before following the steps in the 'Getting Started' Section
 
-In the project directory, you can run:
+- [API link](https://github.com/fabianofrank/realstate-api)
 
-### `npm start`
+## App functions: :wink:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+With this app, you can do the following:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Properties:
+  - You will be able to create a property
+  - Add multiple images that are displayed as a carousel
+  - See them listed the home page as cards
+  - Once you click in the card you will enter the details page
+  - Delete a property in the details page 
+  
+## Getting Started: :chart_with_upwards_trend:
 
-### `npm test`
+To get a local copy up and running follow these simple example steps.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Click on the top right green "code" button.
 
-### `npm run build`
+- On the dropdown menu, choose "download with zip" button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- After download, extract the zip file and you have the project on your machine.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Run `npm i` to intall all the project dependencies.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Run `npm start` to run the application.
+  
+  
+## Built With: :mag:
 
-### `npm run eject`
+- HTML (Front-end) <img align="left" alt="HTML5" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" />
+- CSS (Front-end) <img align="left" alt="CSS3" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" />
+- Tailwind (Front-end) <img align="left" alt="Tailwind" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/tailwindcss-icon.svg" />
+- JavaScript (Front-end) <img align="left" alt="JavaScript" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" />
+- Webpack (Front-end) <img align="left" alt="Webpack" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/webpack.svg" />
+- React (Front-end) <img align="left" alt="React" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" />
+- React-router (Front-end) <img align="left" alt="React-router" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/react-router.svg" />
+- Redux (Front-end) <img align="left" alt="Redux" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/redux.svg" />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Ruby 3.1.2 (Back-end) <img align="left" alt="Ruby" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/ruby.svg" />
+- Ruby on Rails 7.0.3 (Back-end) <img align="left" alt="Rails" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/rails.svg" />
+- PostgreSQL (Back-end) <img align="left" alt="Postgresql" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/postgresql.svg" />
+- [JWT gem (Back-end)](https://github.com/jwt/ruby-jwt)
+- [Rswag gem (Back-end)](https://github.com/rswag/rswag)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author: 👋
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 👤 Fabiano Frank
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- GitHub: [@fabianofrank](https://github.com/fabianofrank)
+- Twitter: [@fabianofrankk](https://twitter.com/fabianofrankk)
+- LinkedIn: [@fabianofrank](https://www.linkedin.com/in/fabianofrank/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing: 🤝
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions, issues, and feature requests are welcome!
 
-### Code Splitting
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Show your support: 🌟
 
-### Analyzing the Bundle Size
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments: 📝
 
-### Making a Progressive Web App
+- Hat tip to [Ronald](https://github.com/rskinnerc)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Thanks to [Plathanus](https://www.plathanus.com.br/en-US) for giving me the opportunity to create build [this fantastic design](https://tabas.com/) that this project was based on!
 
-### Advanced Configuration
+## License: :monocle_face:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.
