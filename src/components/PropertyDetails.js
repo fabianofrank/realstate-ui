@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { getProperties, deleteProperty } from '../redux/store/propertySlice';
 
 const HomeDetails = () => {
@@ -19,7 +19,11 @@ const HomeDetails = () => {
   });
 
   if (!property) {
-    return (<h1 className="flex justify-center items-center text-5xl w-full h-full bg-gray-100 absolute">Create a property first</h1>);
+    return (
+      <div>
+        <Navigate to="/" />
+      </div>
+    );
   }
   return (
     <div className="flex flex-col">
@@ -108,8 +112,8 @@ const HomeDetails = () => {
       </div>
       <div className="flex justify-center">
         <div className="p-5 flex flex-col justify-between w-[1280px]">
-          <h2 className="font-bold text-xl">Description</h2>
-          <p>{property.description}</p>
+          <h2 className="font-bold text-xl p-5">Description</h2>
+          <p className="p-5">{property.description}</p>
         </div>
       </div>
       <div className="flex justify-center">
