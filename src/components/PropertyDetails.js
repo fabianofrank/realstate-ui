@@ -113,7 +113,7 @@ const HomeDetails = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="absolute bottom-0 flex justify-end w-[1320px]">
+        <div className="flex justify-end w-[1320px]">
           <button className="p-5 bg-gray-900 text-gray-100 font-semibold w-48 rounded-full m-5" type="button" onClick={() => dispatch(deleteProperty(property.id))}>
             Delete
           </button>

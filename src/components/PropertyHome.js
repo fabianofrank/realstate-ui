@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { getProperties } from '../redux/store/propertySlice';
 import Carousel from './ImagesCarousel';
 
@@ -19,9 +19,7 @@ const Home = () => {
 
   if (properties.length === 0) {
     return (
-      <div>
-        <Link to="create" />
-      </div>
+      <Navigate to="create" />
     );
   }
   return (
