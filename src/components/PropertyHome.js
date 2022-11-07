@@ -55,7 +55,7 @@ const Home = () => {
                     <p className="font-medium">
                       R$
                       {' '}
-                      {0.98 * property.size}
+                      {0.98 * property.price}
                     </p>
                     <p className="text-xs">/mo</p>
                   </div>
@@ -66,7 +66,7 @@ const Home = () => {
                     <p className="text-xl font-medium">
                       R$
                       {' '}
-                      {property.size}
+                      {property.price}
                     </p>
                     <p className="text-xs">/mo</p>
                   </div>

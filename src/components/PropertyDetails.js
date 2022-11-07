@@ -23,10 +23,10 @@ const HomeDetails = () => {
   }
   return (
     <div className="flex flex-col">
-      <div className="relative">
+      <div className="relative justify-center flex">
         <img className="w-full object-cover h-[600px] brightness-75" key={property.images.id} src={property.images[2]} alt="ok" />
 
-        <div className="absolute bottom-0 p-5">
+        <div className="absolute bottom-0 p-5 w-[1280px]">
           <div className="flex space-x-3 p-5 items-center">
             <div className="bg-gray-100 p-2 rounded-full flex space-x-1 items-center shadow-sm">
               <p className="font-medium text-sm">
@@ -106,13 +106,19 @@ const HomeDetails = () => {
           </div>
         </div>
       </div>
-      <div className="p-5">
-        <h2 className="font-bold text-xl">Description</h2>
-        <p>{property.description}</p>
+      <div className="flex justify-center">
+        <div className="p-5 flex flex-col justify-between w-[1280px]">
+          <h2 className="font-bold text-xl">Description</h2>
+          <p>{property.description}</p>
+        </div>
       </div>
-      <button className="absolute bottom-0 right-0 self-center p-5 bg-gray-900 text-gray-100 font-semibold w-48 rounded-full m-5" type="button" onClick={() => dispatch(deleteProperty(property.id))}>
-        Delete
-      </button>
+      <div className="flex justify-center">
+        <div className="absolute bottom-0 flex justify-end w-[1320px]">
+          <button className="p-5 bg-gray-900 text-gray-100 font-semibold w-48 rounded-full m-5" type="button" onClick={() => dispatch(deleteProperty(property.id))}>
+            Delete
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
