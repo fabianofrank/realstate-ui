@@ -30,7 +30,7 @@ const HomeDetails = () => {
       <div className="relative justify-center flex">
         <img className="w-full object-cover h-[600px] brightness-75" key={property.images.id} src={property.images[2]} alt="ok" />
 
-        <div className="absolute bottom-0 p-5 w-[1280px]">
+        <div className="absolute bottom-0 left-0 p-5">
           <div className="flex space-x-3 p-5 items-center">
             <div className="bg-gray-100 p-2 rounded-full flex space-x-1 items-center shadow-sm">
               <p className="font-medium text-sm">
